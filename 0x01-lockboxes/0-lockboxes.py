@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
     while len(closed) > 0:
         key = closed.pop()
 
-        if key is not in open:
+        if key not in open:
             open.add(key)
             closed = closed.union(boxes[key]).difference(open)
     return len(open) == len(boxes)
