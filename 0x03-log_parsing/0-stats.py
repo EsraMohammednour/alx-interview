@@ -7,11 +7,13 @@ import re
 
 
 def signal_handler(sig, frame):
+    '''signal handler'''
     print_metrics()
     sys.exit(0)
 
 
 def print_metrics():
+    '''print metrics'''
     total_size = sum(file_sizes)
     print(f"Total file size: {total_size}")
 
