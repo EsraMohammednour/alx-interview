@@ -12,7 +12,7 @@ def validUTF8(data):
                 return False
             num_bytes_following -= 1
         else:
-            if num >> 7 == 0b0:
+            if num >> 7 == 0:
                 num_bytes_following = 0
             elif num >> 5 == 0b110:
                 num_bytes_following = 1
@@ -23,4 +23,4 @@ def validUTF8(data):
             else:
                 return False
 
-    return True
+    return num_bytes_following == 0
