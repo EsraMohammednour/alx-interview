@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 '''0x07-rotate_2d_matrix'''
+from typing import List
 
 
-def rotate_2d_matrix(matrix):
+def rotate_2d_matrix(matrix: List[List[int]]) -> None:
     '''n x n 2D matrix, rotate it 90 degrees clockwise'''
     l, r = 0, len(matrix) - 1
     while l < r:
