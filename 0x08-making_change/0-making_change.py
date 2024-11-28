@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Change comes from within''' 
+'''Change comes from within'''
+
+
 def makeChange(coins, total):
     '''function that calculate coin'''
     if total <= 0:
