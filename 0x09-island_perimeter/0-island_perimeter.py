@@ -1,13 +1,16 @@
 #!/bin/usr/python3
 '''Island parameter'''
+
+
 def island_perimeter(grid):
     ''' funaction that calculate the parameter of the island'''
     visit = set()
 
     def dfs(i, j):
         ''' function that return perimeter'''
-        if i >= len(grid) or j >= len(grid[0]) or \
-            i < 0 or j < 0 or grid[i][j] == 0:
+        if i >= len(grid) or \
+           j >= len(grid[0]) or \
+           i < 0 or j < 0 or grid[i][j] == 0:
             return 1
         if (i, j) in visit:
             return 0
