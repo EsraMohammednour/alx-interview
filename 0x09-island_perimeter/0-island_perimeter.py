@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 '''Island parameter'''
-from typing import List
 
 
-def island_perimeter(grid: List[List[int]]) -> int:
+def island_perimeter(grid):
     ''' funaction that calculate the parameter of the island'''
     visit = set()
 
