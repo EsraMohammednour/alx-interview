@@ -3,7 +3,7 @@
 from typing import List
 
 
-def island_perimeter(grid: List[List]) -> int:
+def island_perimeter(grid: List[List[int]]) -> int:
     ''' funaction that calculate the parameter of the island'''
     visit = set()
 
